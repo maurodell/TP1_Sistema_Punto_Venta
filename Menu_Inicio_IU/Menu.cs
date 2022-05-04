@@ -28,5 +28,12 @@ namespace Menu_Inicio_IU
             admin.MdiParent = this;
             admin.Show();
         }
+
+        private void notaDeCréditoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmNotaDeCredito NC = new frmNotaDeCredito();
+            NC.MdiParent = this;
+            NC.Show();
+        }
     }
 }

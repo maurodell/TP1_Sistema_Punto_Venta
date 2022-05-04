@@ -12,17 +12,20 @@ namespace MPP
 {
     public class MPPNotaDeCredito : Repositorio<BEClsNotaDeCredito>
     {
-        public bool Crear(BEClsNotaDeCredito objNC)
+        Acceso oAcDatos;
+        public bool Crear(BEClsNotaDeCredito oBENC)
+        {
+            string consulta = string.Format("INSERT INTO NotaDeCredito (Numero_Doc, Fecha, Monto) values (" + oBENC.Numero_doc + ",'" + (oBENC.Fecha).ToString("MM/dd/yyyy") + "'," + oBENC.Monto + ")");
+            oAcDatos = new Acceso();
+            return oAcDatos.Escribir(consulta);
+        }
+
+        public bool Eliminar(BEClsNotaDeCredito oBENC)
         {
             throw new NotImplementedException();
         }
 
-        public bool Eliminar(BEClsNotaDeCredito objNC)
-        {
-            throw new NotImplementedException();
-        }
-
-        public BEClsNotaDeCredito Leer(BEClsNotaDeCredito objNC)
+        public BEClsNotaDeCredito Leer(BEClsNotaDeCredito oBENC)
         {
             throw new NotImplementedException();
         }
@@ -32,7 +35,7 @@ namespace MPP
             throw new NotImplementedException();
         }
 
-        public bool Modificar(BEClsNotaDeCredito objNC)
+        public bool Modificar(BEClsNotaDeCredito oBENC)
         {
             throw new NotImplementedException();
         }

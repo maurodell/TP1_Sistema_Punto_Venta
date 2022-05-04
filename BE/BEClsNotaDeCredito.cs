@@ -8,7 +8,7 @@ namespace BE
 {
     public class BEClsNotaDeCredito : Entidad
     {
-        public long Numero_doc { get; set; }
+        public int Numero_doc { get; set; }
         public DateTime Fecha { get; set; }
         public double Monto { get; set; }
         public List<BEClsAdministrador> ListResponsable { get; set; }
