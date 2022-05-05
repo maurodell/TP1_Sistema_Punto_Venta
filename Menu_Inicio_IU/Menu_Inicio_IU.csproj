@@ -52,6 +52,12 @@
     <Compile Include="Admin_IU.Designer.cs">
       <DependentUpon>Admin_IU.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmAsignarNC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAsignarNC.Designer.cs">
+      <DependentUpon>frmAsignarNC.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmNotaDeCredito.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +86,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Admin_IU.resx">
       <DependentUpon>Admin_IU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAsignarNC.resx">
+      <DependentUpon>frmAsignarNC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmNotaDeCredito.resx">
       <DependentUpon>frmNotaDeCredito.cs</DependentUpon>

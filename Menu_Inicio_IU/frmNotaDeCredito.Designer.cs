@@ -30,19 +30,17 @@ namespace Menu_Inicio_IU
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.dgvNC = new System.Windows.Forms.DataGridView();
-            this.btnAlta = new System.Windows.Forms.Button();
-            this.btnBaja = new System.Windows.Forms.Button();
-            this.btnModificar = new System.Windows.Forms.Button();
             this.btnCerrar = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtNumFac = new System.Windows.Forms.TextBox();
+            this.btnModificar = new System.Windows.Forms.Button();
+            this.dtpFecha = new System.Windows.Forms.DateTimePicker();
+            this.btnBaja = new System.Windows.Forms.Button();
+            this.btnAlta = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
             this.txtMonto = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.dtpFecha = new System.Windows.Forms.DateTimePicker();
-            this.cmbEmpleado = new System.Windows.Forms.ComboBox();
+            this.txtNumFac = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.dgvNC = new System.Windows.Forms.DataGridView();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNC)).BeginInit();
             this.SuspendLayout();
@@ -50,11 +48,9 @@ namespace Menu_Inicio_IU
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.btnCerrar);
-            this.groupBox1.Controls.Add(this.cmbEmpleado);
             this.groupBox1.Controls.Add(this.btnModificar);
             this.groupBox1.Controls.Add(this.dtpFecha);
             this.groupBox1.Controls.Add(this.btnBaja);
-            this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.btnAlta);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.txtMonto);
@@ -68,18 +64,42 @@ namespace Menu_Inicio_IU
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Ingrese los datos de la Nota de Crédito";
             // 
-            // dgvNC
+            // btnCerrar
             // 
-            this.dgvNC.AllowUserToAddRows = false;
-            this.dgvNC.AllowUserToDeleteRows = false;
-            this.dgvNC.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvNC.Location = new System.Drawing.Point(695, 67);
-            this.dgvNC.Name = "dgvNC";
-            this.dgvNC.ReadOnly = true;
-            this.dgvNC.RowHeadersWidth = 102;
-            this.dgvNC.RowTemplate.Height = 40;
-            this.dgvNC.Size = new System.Drawing.Size(1346, 770);
-            this.dgvNC.TabIndex = 1;
+            this.btnCerrar.Location = new System.Drawing.Point(344, 717);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(177, 55);
+            this.btnCerrar.TabIndex = 5;
+            this.btnCerrar.Text = "Cerrar";
+            this.btnCerrar.UseVisualStyleBackColor = true;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
+            // 
+            // btnModificar
+            // 
+            this.btnModificar.Enabled = false;
+            this.btnModificar.Location = new System.Drawing.Point(344, 624);
+            this.btnModificar.Name = "btnModificar";
+            this.btnModificar.Size = new System.Drawing.Size(177, 55);
+            this.btnModificar.TabIndex = 4;
+            this.btnModificar.Text = "Modificar";
+            this.btnModificar.UseVisualStyleBackColor = true;
+            // 
+            // dtpFecha
+            // 
+            this.dtpFecha.Location = new System.Drawing.Point(26, 394);
+            this.dtpFecha.Name = "dtpFecha";
+            this.dtpFecha.Size = new System.Drawing.Size(495, 38);
+            this.dtpFecha.TabIndex = 6;
+            // 
+            // btnBaja
+            // 
+            this.btnBaja.Location = new System.Drawing.Point(39, 717);
+            this.btnBaja.Name = "btnBaja";
+            this.btnBaja.Size = new System.Drawing.Size(177, 55);
+            this.btnBaja.TabIndex = 3;
+            this.btnBaja.Text = "Baja";
+            this.btnBaja.UseVisualStyleBackColor = true;
+            this.btnBaja.Click += new System.EventHandler(this.btnBaja_Click);
             // 
             // btnAlta
             // 
@@ -91,48 +111,14 @@ namespace Menu_Inicio_IU
             this.btnAlta.UseVisualStyleBackColor = true;
             this.btnAlta.Click += new System.EventHandler(this.btnAlta_Click);
             // 
-            // btnBaja
+            // label3
             // 
-            this.btnBaja.Location = new System.Drawing.Point(39, 717);
-            this.btnBaja.Name = "btnBaja";
-            this.btnBaja.Size = new System.Drawing.Size(177, 55);
-            this.btnBaja.TabIndex = 3;
-            this.btnBaja.Text = "Baja";
-            this.btnBaja.UseVisualStyleBackColor = true;
-            // 
-            // btnModificar
-            // 
-            this.btnModificar.Location = new System.Drawing.Point(344, 624);
-            this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(177, 55);
-            this.btnModificar.TabIndex = 4;
-            this.btnModificar.Text = "Modificar";
-            this.btnModificar.UseVisualStyleBackColor = true;
-            // 
-            // btnCerrar
-            // 
-            this.btnCerrar.Location = new System.Drawing.Point(344, 717);
-            this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(177, 55);
-            this.btnCerrar.TabIndex = 5;
-            this.btnCerrar.Text = "Cerrar";
-            this.btnCerrar.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(20, 80);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(226, 32);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Número Factura:";
-            // 
-            // txtNumFac
-            // 
-            this.txtNumFac.Location = new System.Drawing.Point(26, 127);
-            this.txtNumFac.Name = "txtNumFac";
-            this.txtNumFac.Size = new System.Drawing.Size(495, 38);
-            this.txtNumFac.TabIndex = 1;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(20, 345);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(102, 32);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Fecha:";
             // 
             // txtMonto
             // 
@@ -150,38 +136,34 @@ namespace Menu_Inicio_IU
             this.label2.TabIndex = 2;
             this.label2.Text = "Monto:";
             // 
-            // label3
+            // txtNumFac
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(20, 345);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(102, 32);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Fecha:";
+            this.txtNumFac.Location = new System.Drawing.Point(26, 127);
+            this.txtNumFac.Name = "txtNumFac";
+            this.txtNumFac.Size = new System.Drawing.Size(495, 38);
+            this.txtNumFac.TabIndex = 1;
             // 
-            // label4
+            // label1
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(20, 493);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(182, 32);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "Responsable";
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(20, 80);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(226, 32);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Número Factura:";
             // 
-            // dtpFecha
+            // dgvNC
             // 
-            this.dtpFecha.Location = new System.Drawing.Point(26, 394);
-            this.dtpFecha.Name = "dtpFecha";
-            this.dtpFecha.Size = new System.Drawing.Size(495, 38);
-            this.dtpFecha.TabIndex = 6;
-            // 
-            // cmbEmpleado
-            // 
-            this.cmbEmpleado.FormattingEnabled = true;
-            this.cmbEmpleado.Location = new System.Drawing.Point(26, 540);
-            this.cmbEmpleado.Name = "cmbEmpleado";
-            this.cmbEmpleado.Size = new System.Drawing.Size(495, 39);
-            this.cmbEmpleado.TabIndex = 7;
+            this.dgvNC.AllowUserToAddRows = false;
+            this.dgvNC.AllowUserToDeleteRows = false;
+            this.dgvNC.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvNC.Location = new System.Drawing.Point(695, 67);
+            this.dgvNC.Name = "dgvNC";
+            this.dgvNC.ReadOnly = true;
+            this.dgvNC.RowHeadersWidth = 102;
+            this.dgvNC.RowTemplate.Height = 40;
+            this.dgvNC.Size = new System.Drawing.Size(1346, 770);
+            this.dgvNC.TabIndex = 1;
             // 
             // frmNotaDeCredito
             // 
@@ -212,9 +194,7 @@ namespace Menu_Inicio_IU
         private System.Windows.Forms.TextBox txtMonto;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtNumFac;
-        private System.Windows.Forms.ComboBox cmbEmpleado;
         private System.Windows.Forms.DateTimePicker dtpFecha;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
     }
 }

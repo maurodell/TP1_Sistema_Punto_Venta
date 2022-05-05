@@ -17,12 +17,13 @@ namespace Menu_Inicio_IU
         FrmUsuario frmUser;
         BEClsUsuario listaEmp;
         BLLClsEmpleadoABM abmEmpleados;
+        BEClsEmpleado oBEEmp;
         public Admin_IU()
         {
             InitializeComponent();
             listaEmp = BEClsUsuario.Instanciar();
             abmEmpleados = new BLLClsEmpleadoABM();
-
+            oBEEmp = new BEClsEmpleado();
             txtBuscador.Text = "Ingresar Legajo";
         }
         public void CargarGrilla()
@@ -44,21 +45,15 @@ namespace Menu_Inicio_IU
         }
         private void btnBaja_Click(object sender, EventArgs e)
         {
+            abmEmpleados = new BLLClsEmpleadoABM();
             try
             {
-
-            }
-            catch (Exception ex)
-            {
-
-                throw new Exception(ex.Message);
-            }
-        }
-        private void btnAlta_Click(object sender, EventArgs e)
-        {
-            try
-            {
-
+                if (dataGridView1.SelectedRows.Count > 0)
+                {
+                    BEClsEmpleado objEmp = dataGridView1.SelectedRows[0].DataBoundItem as BEClsEmpleado;
+                    abmEmpleados.Eliminar(objEmp);
+                    CargarGrilla();
+                }
             }
             catch (Exception ex)
             {
@@ -68,10 +63,20 @@ namespace Menu_Inicio_IU
         }
         private void btnMod_Click(object sender, EventArgs e)
         {
-
             try
             {
-
+                frmUser = new FrmUsuario();
+                if (dataGridView1.SelectedRows.Count > 0)
+                {
+                    BEClsEmpleado objEmp = dataGridView1.SelectedRows[0].DataBoundItem as BEClsEmpleado;
+                    frmUser.ModificarEmpleado(objEmp);
+                    DialogResult resp = frmUser.ShowDialog();
+                    if (resp == DialogResult.OK)
+                    {
+                        CargarGrilla();
+                        frmUser.Close();
+                    }
+                }
             }
             catch (Exception ex)
             {
@@ -93,6 +98,23 @@ namespace Menu_Inicio_IU
         private void txtBuscador_MouseHover(object sender, EventArgs e)
         {
             txtBuscador.Text = null;
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            oBEEmp = (BEClsEmpleado)this.dataGridView1.CurrentRow.DataBoundItem;
+            
+        }
+
+        private void btnAlta_Click_1(object sender, EventArgs e)
+        {
+            abmEmpleados = new BLLClsEmpleadoABM();
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+                BEClsEmpleado objEmp = dataGridView1.SelectedRows[0].DataBoundItem as BEClsEmpleado;
+                abmEmpleados.Alta(objEmp);
+                CargarGrilla();
+            }
         }
     }
 }

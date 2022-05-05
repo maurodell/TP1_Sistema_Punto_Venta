@@ -23,9 +23,12 @@ namespace BLL
 
         public bool Eliminar(BEClsEmpleado objEmp)
         {
-            throw new NotImplementedException();
+            return eMPP.Eliminar(objEmp);
         }
-
+        public bool Alta(BEClsEmpleado objEmp)
+        {
+            return eMPP.Alta(objEmp);
+        }
         public BEClsEmpleado Leer(BEClsEmpleado objEmp)
         {
             throw new NotImplementedException();
@@ -38,7 +41,7 @@ namespace BLL
 
         public bool Modificar(BEClsEmpleado objEmp)
         {
-            throw new NotImplementedException();
+            return eMPP.Modificar(objEmp);
         }
     }
 }

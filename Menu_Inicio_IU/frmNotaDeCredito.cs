@@ -24,14 +24,7 @@ namespace Menu_Inicio_IU
         BLLClsNotaDeCredito oBLLNC;
         BEClsNotaDeCredito oBENC;
         BLLClsEmpleadoABM oBLLEmp;
-        void CargarComboResponsable()
-        {
-            cmbEmpleado.DataSource = null;
-            cmbEmpleado.DataSource = oBLLEmp.ListarTodos();
-            cmbEmpleado.ValueMember = "codigo";
-            cmbEmpleado.DisplayMember = "Nombre";
-            cmbEmpleado.Refresh();
-        }
+
         void CargarGrilla()
         {
             this.dgvNC.DataSource = null;
@@ -53,7 +46,7 @@ namespace Menu_Inicio_IU
                 oBENC.Monto = Convert.ToDouble(txtMonto.Text);
 
                 oBLLNC.Crear(oBENC);
-                //CargarGrilla();
+                CargarGrilla();
                 Limpiar();
             }
             catch (Exception ex)
@@ -65,8 +58,42 @@ namespace Menu_Inicio_IU
 
         private void frmNotaDeCredito_Load(object sender, EventArgs e)
         {
-            CargarComboResponsable();
-            //CargarGrilla();
+            CargarGrilla();
+        }
+
+        private void btnBaja_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (dgvNC.SelectedRows.Count > 0)
+                {
+                    BEClsNotaDeCredito objNc = dgvNC.SelectedRows[0].DataBoundItem as BEClsNotaDeCredito;
+                    DialogResult Respuesta;
+                    Respuesta = MessageBox.Show("¿Confirma la eleminación del Alumno?", "ALERTA", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                    if (Respuesta == DialogResult.Yes)
+                    {
+                        if (oBLLNC.Eliminar(objNc) == false)
+                        { MessageBox.Show("Para dar de baja al Alumno no debe tener Materias Asociadas"); }
+                        else
+                        {   
+                            CargarGrilla();
+                            Limpiar();
+                        }
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("No hay Notas de Crédito");
+                }
+
+            }
+            catch (Exception ex)
+            { MessageBox.Show(ex.Message); }
+        }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

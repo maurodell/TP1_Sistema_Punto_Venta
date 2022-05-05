@@ -36,10 +36,12 @@ namespace Menu_Inicio_IU
             this.ventaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.compraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cajaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.notaDeCréditoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.crearNCToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.asignarResponsableToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.notaDeCréditoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -64,32 +66,32 @@ namespace Menu_Inicio_IU
             // adminToolStripMenuItem
             // 
             this.adminToolStripMenuItem.Name = "adminToolStripMenuItem";
-            this.adminToolStripMenuItem.Size = new System.Drawing.Size(129, 45);
+            this.adminToolStripMenuItem.Size = new System.Drawing.Size(129, 48);
             this.adminToolStripMenuItem.Text = "Admin";
             this.adminToolStripMenuItem.Click += new System.EventHandler(this.adminToolStripMenuItem_Click);
             // 
             // productosToolStripMenuItem
             // 
             this.productosToolStripMenuItem.Name = "productosToolStripMenuItem";
-            this.productosToolStripMenuItem.Size = new System.Drawing.Size(177, 45);
+            this.productosToolStripMenuItem.Size = new System.Drawing.Size(177, 48);
             this.productosToolStripMenuItem.Text = "Productos";
             // 
             // proveedoresToolStripMenuItem
             // 
             this.proveedoresToolStripMenuItem.Name = "proveedoresToolStripMenuItem";
-            this.proveedoresToolStripMenuItem.Size = new System.Drawing.Size(208, 45);
+            this.proveedoresToolStripMenuItem.Size = new System.Drawing.Size(208, 48);
             this.proveedoresToolStripMenuItem.Text = "Proveedores";
             // 
             // ventaToolStripMenuItem
             // 
             this.ventaToolStripMenuItem.Name = "ventaToolStripMenuItem";
-            this.ventaToolStripMenuItem.Size = new System.Drawing.Size(117, 45);
+            this.ventaToolStripMenuItem.Size = new System.Drawing.Size(117, 48);
             this.ventaToolStripMenuItem.Text = "Venta";
             // 
             // compraToolStripMenuItem
             // 
             this.compraToolStripMenuItem.Name = "compraToolStripMenuItem";
-            this.compraToolStripMenuItem.Size = new System.Drawing.Size(148, 45);
+            this.compraToolStripMenuItem.Size = new System.Drawing.Size(148, 48);
             this.compraToolStripMenuItem.Text = "Compra";
             // 
             // cajaToolStripMenuItem
@@ -100,13 +102,36 @@ namespace Menu_Inicio_IU
             this.cajaToolStripMenuItem.Size = new System.Drawing.Size(98, 48);
             this.cajaToolStripMenuItem.Text = "Caja";
             // 
+            // notaDeCréditoToolStripMenuItem
+            // 
+            this.notaDeCréditoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.crearNCToolStripMenuItem,
+            this.asignarResponsableToolStripMenuItem});
+            this.notaDeCréditoToolStripMenuItem.Name = "notaDeCréditoToolStripMenuItem";
+            this.notaDeCréditoToolStripMenuItem.Size = new System.Drawing.Size(448, 54);
+            this.notaDeCréditoToolStripMenuItem.Text = "Nota De Crédito";
+            // 
+            // crearNCToolStripMenuItem
+            // 
+            this.crearNCToolStripMenuItem.Name = "crearNCToolStripMenuItem";
+            this.crearNCToolStripMenuItem.Size = new System.Drawing.Size(459, 54);
+            this.crearNCToolStripMenuItem.Text = "Crear NC";
+            this.crearNCToolStripMenuItem.Click += new System.EventHandler(this.crearNCToolStripMenuItem_Click);
+            // 
+            // asignarResponsableToolStripMenuItem
+            // 
+            this.asignarResponsableToolStripMenuItem.Name = "asignarResponsableToolStripMenuItem";
+            this.asignarResponsableToolStripMenuItem.Size = new System.Drawing.Size(459, 54);
+            this.asignarResponsableToolStripMenuItem.Text = "Asignar Responsable";
+            this.asignarResponsableToolStripMenuItem.Click += new System.EventHandler(this.asignarResponsableToolStripMenuItem_Click);
+            // 
             // ayudaToolStripMenuItem
             // 
             this.ayudaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.helpToolStripMenuItem,
             this.salirToolStripMenuItem});
             this.ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
-            this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(125, 45);
+            this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(125, 48);
             this.ayudaToolStripMenuItem.Text = "Ayuda";
             // 
             // helpToolStripMenuItem
@@ -121,13 +146,6 @@ namespace Menu_Inicio_IU
             this.salirToolStripMenuItem.Size = new System.Drawing.Size(246, 54);
             this.salirToolStripMenuItem.Text = "Salir";
             this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
-            // 
-            // notaDeCréditoToolStripMenuItem
-            // 
-            this.notaDeCréditoToolStripMenuItem.Name = "notaDeCréditoToolStripMenuItem";
-            this.notaDeCréditoToolStripMenuItem.Size = new System.Drawing.Size(448, 54);
-            this.notaDeCréditoToolStripMenuItem.Text = "Nota De Crédito";
-            this.notaDeCréditoToolStripMenuItem.Click += new System.EventHandler(this.notaDeCréditoToolStripMenuItem_Click);
             // 
             // Menu
             // 
@@ -159,6 +177,8 @@ namespace Menu_Inicio_IU
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem notaDeCréditoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem crearNCToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem asignarResponsableToolStripMenuItem;
     }
 }
 

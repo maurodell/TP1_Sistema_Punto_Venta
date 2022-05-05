@@ -25,7 +25,31 @@ namespace MPP
 
         public bool Eliminar(BEClsEmpleado objEmp)
         {
-            throw new NotImplementedException();
+            if (Existe_NC_Asociada(objEmp) == false)
+            {
+                objEmp.Soft_Delete = false;
+                string consulta = "UPDATE Empleado SET Soft_Delete = " + Convert.ToByte(objEmp.Soft_Delete) + " WHERE idEmpleado = " + objEmp.Codigo + "";
+                oAcDatos = new Acceso();
+                return oAcDatos.Escribir(consulta);
+            }
+            else
+            {
+                return false;
+            }
+        }
+        public bool Alta(BEClsEmpleado objEmp)
+        {
+            if (Existe_NC_Asociada(objEmp) == false)
+            {
+                objEmp.Soft_Delete = true;
+                string consulta = "UPDATE Empleado SET Soft_Delete = " + Convert.ToByte(objEmp.Soft_Delete) + " WHERE idEmpleado = " + objEmp.Codigo + "";
+                oAcDatos = new Acceso();
+                return oAcDatos.Escribir(consulta);
+            }
+            else
+            {
+                return false;
+            }
         }
 
         public BEClsEmpleado Leer(BEClsEmpleado objEmp)
@@ -70,10 +94,17 @@ namespace MPP
             return listEmp;
 
         }
-
         public bool Modificar(BEClsEmpleado objEmp)
         {
-            throw new NotImplementedException();
+            string consulta;
+            consulta = "UPDATE Empleado SET Nombre = '" + objEmp.Nombre + "', Apellido = '" + objEmp.Apellido + "', Puesto = '" + objEmp.Puesto + "', idSuc = " + objEmp.Sucursal.Codigo + ", Email = '" + objEmp.Email + "' WHERE idEmpleado = '" + objEmp.Codigo + "'";
+            oAcDatos = new Acceso();
+            return oAcDatos.Escribir(consulta);
+        }
+        public bool Existe_NC_Asociada(BEClsEmpleado objEmp)
+        {  //instancio un objeto de la clase datos para operar con la BD
+            oAcDatos = new Acceso();
+            return oAcDatos.LeerScalar("SELECT COUNT(idEmpleado) from NC_Empleado where idEmpleado =" + objEmp.Codigo + "");
         }
     }
 }

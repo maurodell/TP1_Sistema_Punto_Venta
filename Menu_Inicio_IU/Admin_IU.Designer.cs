@@ -40,8 +40,8 @@ namespace Menu_Inicio_IU
             this.btnBuscar = new System.Windows.Forms.Button();
             this.btnMod = new System.Windows.Forms.Button();
             this.btnBaja = new System.Windows.Forms.Button();
-            this.btnAlta = new System.Windows.Forms.Button();
             this.btnCrear = new System.Windows.Forms.Button();
+            this.btnAlta = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -72,6 +72,7 @@ namespace Menu_Inicio_IU
             this.dataGridView1.RowTemplate.Height = 40;
             this.dataGridView1.Size = new System.Drawing.Size(1379, 571);
             this.dataGridView1.TabIndex = 4;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // label1
             // 
@@ -92,13 +93,13 @@ namespace Menu_Inicio_IU
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.btnAlta);
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.btnBuscar);
             this.groupBox2.Controls.Add(this.btnMod);
             this.groupBox2.Controls.Add(this.btnBaja);
-            this.groupBox2.Controls.Add(this.btnAlta);
             this.groupBox2.Controls.Add(this.btnCrear);
             this.groupBox2.Location = new System.Drawing.Point(30, 46);
             this.groupBox2.Name = "groupBox2";
@@ -164,25 +165,25 @@ namespace Menu_Inicio_IU
             this.btnBaja.UseVisualStyleBackColor = true;
             this.btnBaja.Click += new System.EventHandler(this.btnBaja_Click);
             // 
-            // btnAlta
-            // 
-            this.btnAlta.Location = new System.Drawing.Point(51, 434);
-            this.btnAlta.Name = "btnAlta";
-            this.btnAlta.Size = new System.Drawing.Size(199, 57);
-            this.btnAlta.TabIndex = 1;
-            this.btnAlta.Text = "Alta";
-            this.btnAlta.UseVisualStyleBackColor = true;
-            this.btnAlta.Click += new System.EventHandler(this.btnAlta_Click);
-            // 
             // btnCrear
             // 
-            this.btnCrear.Location = new System.Drawing.Point(51, 343);
+            this.btnCrear.Location = new System.Drawing.Point(51, 354);
             this.btnCrear.Name = "btnCrear";
             this.btnCrear.Size = new System.Drawing.Size(419, 57);
             this.btnCrear.TabIndex = 0;
             this.btnCrear.Text = "Crear Usuario";
             this.btnCrear.UseVisualStyleBackColor = true;
             this.btnCrear.Click += new System.EventHandler(this.btnCrear_Click);
+            // 
+            // btnAlta
+            // 
+            this.btnAlta.Location = new System.Drawing.Point(51, 434);
+            this.btnAlta.Name = "btnAlta";
+            this.btnAlta.Size = new System.Drawing.Size(196, 57);
+            this.btnAlta.TabIndex = 8;
+            this.btnAlta.Text = "Alta";
+            this.btnAlta.UseVisualStyleBackColor = true;
+            this.btnAlta.Click += new System.EventHandler(this.btnAlta_Click_1);
             // 
             // Admin_IU
             // 
@@ -209,7 +210,6 @@ namespace Menu_Inicio_IU
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.Button btnMod;
         private System.Windows.Forms.Button btnBaja;
-        private System.Windows.Forms.Button btnAlta;
         private System.Windows.Forms.Button btnCrear;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtBuscador;
@@ -217,5 +217,6 @@ namespace Menu_Inicio_IU
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button btnAlta;
     }
 }

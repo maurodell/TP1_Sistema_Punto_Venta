@@ -76,12 +76,33 @@ namespace Menu_Inicio_IU
         }
         public void ModificarEmpleado(BEClsEmpleado empChange)
         {
-            
+            btnAceptar.Visible = false;
+            btnCambiar.Visible = true;
+            txtPass.Enabled = false;
+            txtRePass.Enabled = false;
+            txtLegajo.Visible = true;
+            txtLegajo.Enabled = false;
+            lblLeg.Visible = true;
+            txtLegajo.Text = empChange.Codigo.ToString();
+
+            txtNombre.Text = empChange.Nombre;
+            txtApellido.Text = empChange.Apellido;
+            txtEmail.Text = empChange.Email;
+            cmbPuesto.SelectedItem = empChange.Puesto;
+            cmbSucursal.SelectedItem = empChange.Sucursal;
         }
 
         private void btnCambiar_Click(object sender, EventArgs e)
         {
+            pEmpleado = new BEClsEmpleado();
+            pEmpleado.Nombre = txtNombre.Text;
+            pEmpleado.Apellido = txtApellido.Text;
+            pEmpleado.Codigo = Convert.ToInt32(txtLegajo.Text);
+            pEmpleado.Email = txtEmail.Text;
+            pEmpleado.Sucursal = (BEClsSucursal)cmbSucursal.SelectedItem;
+            pEmpleado.Puesto = cmbPuesto.SelectedItem.ToString();
 
+            empAMB.Modificar(pEmpleado);
             this.DialogResult = DialogResult.OK;
         }
 

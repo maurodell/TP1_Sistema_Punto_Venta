@@ -29,11 +29,18 @@ namespace Menu_Inicio_IU
             admin.Show();
         }
 
-        private void notaDeCréditoToolStripMenuItem_Click(object sender, EventArgs e)
+        private void crearNCToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmNotaDeCredito NC = new frmNotaDeCredito();
             NC.MdiParent = this;
             NC.Show();
+        }
+
+        private void asignarResponsableToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmAsignarNC AsignarNC = new frmAsignarNC();
+            AsignarNC.MdiParent = this;
+            AsignarNC.Show();
         }
     }
 }
