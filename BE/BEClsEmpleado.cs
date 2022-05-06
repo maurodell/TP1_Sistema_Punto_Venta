@@ -22,8 +22,9 @@ namespace BE
             get { return softDelete; }
             set { softDelete = value; }
         }
+        public List<BEClsNotaDeCredito> ListaNC;
         #endregion
-        public BEClsEmpleado() { }
+        public BEClsEmpleado() { ListaNC = new List<BEClsNotaDeCredito>();  }
         public int AuthCod()
         {
             return 0;

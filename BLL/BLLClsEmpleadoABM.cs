@@ -43,5 +43,17 @@ namespace BLL
         {
             return eMPP.Modificar(objEmp);
         }
+        public bool AsignarNC_Empleado(BEClsEmpleado objEmp, BEClsNotaDeCredito objNC)
+        {
+            return eMPP.AsignarNC_Empleado(objEmp, objNC);
+        }
+        public bool QuitarNC_Empleado(BEClsEmpleado objEmp, BEClsNotaDeCredito objNC)
+        {
+            return eMPP.QuitarNC_Empleado(objEmp, objNC);
+        }
+        public void ListarNC_Empleado(BEClsEmpleado objEmp)
+        {
+            eMPP.ListarNC_Empleado(objEmp);
+        }
     }
 }

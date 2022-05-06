@@ -106,5 +106,38 @@ namespace MPP
             oAcDatos = new Acceso();
             return oAcDatos.LeerScalar("SELECT COUNT(idEmpleado) from NC_Empleado where idEmpleado =" + objEmp.Codigo + "");
         }
+        public bool AsignarNC_Empleado(BEClsEmpleado objEmp, BEClsNotaDeCredito objNC)
+        {
+            string consulta = "INSERT INTO NC_Empleado ([idNotaCredito], [idEmpleado]) values (" + objNC.Codigo + ", " + objEmp.Codigo + ")";
+            oAcDatos = new Acceso();
+            return oAcDatos.Escribir(consulta);
+        }
+        public bool QuitarNC_Empleado(BEClsEmpleado objEmp, BEClsNotaDeCredito objNC)
+        {
+            string consulta = "DELETE FROM NC_Empleado WHERE idEmpleado = " + objEmp.Codigo + " and idNotaCredito = " + objNC.Codigo + ")";
+            oAcDatos = new Acceso();
+            return oAcDatos.Escribir(consulta);
+        }
+        public void ListarNC_Empleado(BEClsEmpleado objEmp)
+        {
+            string consulta2 = @"SELECT NotaDeCredito.idNC, NotaDeCredito.Numero_Doc, NotaDeCredito.Fecha, NotaDeCredito.Monto FROM NotaDeCredito, NC_Empleado WHERE NotaDeCredito.idNC = NC_Empleado.idNotaCredito and NC_Empleado.idEmpleado = " + objEmp.Codigo + "";
+            Acceso oDatos2 = new Acceso();
+            DataSet Ds2 = new DataSet();
+            Ds2 = oDatos2.Leer2(consulta2);
+            List<BEClsNotaDeCredito> listNC = new List<BEClsNotaDeCredito>();
+            if (Ds2.Tables[0].Rows.Count > 0)
+            {
+                foreach (DataRow item in Ds2.Tables[0].Rows)
+                {
+                    BEClsNotaDeCredito nc = new BEClsNotaDeCredito();
+                    nc.Codigo = Convert.ToInt32(item["idNC"]);
+                    nc.Numero_doc = Convert.ToInt32(item["Numero_doc"]);
+                    nc.Fecha = Convert.ToDateTime(item["Fecha"]);
+                    nc.Monto = Convert.ToDouble(item[3]);
+                    listNC.Add(nc);
+                }
+                objEmp.ListaNC = listNC;
+            }
+        }
     }
 }

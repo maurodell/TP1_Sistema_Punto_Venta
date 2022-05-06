@@ -11,7 +11,6 @@ namespace BE
         public int Numero_doc { get; set; }
         public DateTime Fecha { get; set; }
         public double Monto { get; set; }
-        public List<BEClsAdministrador> ListResponsable { get; set; }
         public BEClsNotaDeCredito()
         {
 

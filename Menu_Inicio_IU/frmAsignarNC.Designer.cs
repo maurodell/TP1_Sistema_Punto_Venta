@@ -51,33 +51,34 @@ namespace Menu_Inicio_IU
             this.dgvResp.ReadOnly = true;
             this.dgvResp.RowHeadersWidth = 102;
             this.dgvResp.RowTemplate.Height = 40;
-            this.dgvResp.Size = new System.Drawing.Size(705, 578);
+            this.dgvResp.Size = new System.Drawing.Size(817, 578);
             this.dgvResp.TabIndex = 0;
+            this.dgvResp.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvResp_CellClick);
             // 
             // dgvAsigados
             // 
             this.dgvAsigados.AllowUserToAddRows = false;
             this.dgvAsigados.AllowUserToDeleteRows = false;
             this.dgvAsigados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvAsigados.Location = new System.Drawing.Point(1188, 106);
+            this.dgvAsigados.Location = new System.Drawing.Point(1250, 106);
             this.dgvAsigados.Name = "dgvAsigados";
             this.dgvAsigados.ReadOnly = true;
             this.dgvAsigados.RowHeadersWidth = 102;
             this.dgvAsigados.RowTemplate.Height = 40;
-            this.dgvAsigados.Size = new System.Drawing.Size(705, 578);
+            this.dgvAsigados.Size = new System.Drawing.Size(867, 578);
             this.dgvAsigados.TabIndex = 1;
             // 
             // cmbListaNC
             // 
             this.cmbListaNC.FormattingEnabled = true;
-            this.cmbListaNC.Location = new System.Drawing.Point(812, 236);
+            this.cmbListaNC.Location = new System.Drawing.Point(905, 236);
             this.cmbListaNC.Name = "cmbListaNC";
             this.cmbListaNC.Size = new System.Drawing.Size(322, 39);
             this.cmbListaNC.TabIndex = 2;
             // 
             // btnAsignar
             // 
-            this.btnAsignar.Location = new System.Drawing.Point(855, 319);
+            this.btnAsignar.Location = new System.Drawing.Point(948, 319);
             this.btnAsignar.Name = "btnAsignar";
             this.btnAsignar.Size = new System.Drawing.Size(238, 61);
             this.btnAsignar.TabIndex = 3;
@@ -87,12 +88,14 @@ namespace Menu_Inicio_IU
             // 
             // btnQuitar
             // 
-            this.btnQuitar.Location = new System.Drawing.Point(855, 406);
+            this.btnQuitar.Enabled = false;
+            this.btnQuitar.Location = new System.Drawing.Point(948, 406);
             this.btnQuitar.Name = "btnQuitar";
             this.btnQuitar.Size = new System.Drawing.Size(238, 62);
             this.btnQuitar.TabIndex = 4;
             this.btnQuitar.Text = "Quitar";
             this.btnQuitar.UseVisualStyleBackColor = true;
+            this.btnQuitar.Click += new System.EventHandler(this.btnQuitar_Click);
             // 
             // label1
             // 
@@ -106,7 +109,7 @@ namespace Menu_Inicio_IU
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(1182, 62);
+            this.label2.Location = new System.Drawing.Point(1269, 62);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(368, 32);
             this.label2.TabIndex = 6;
@@ -114,7 +117,7 @@ namespace Menu_Inicio_IU
             // 
             // btnCerrar
             // 
-            this.btnCerrar.Location = new System.Drawing.Point(855, 622);
+            this.btnCerrar.Location = new System.Drawing.Point(948, 622);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(238, 62);
             this.btnCerrar.TabIndex = 7;
@@ -126,7 +129,7 @@ namespace Menu_Inicio_IU
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1942, 734);
+            this.ClientSize = new System.Drawing.Size(2164, 734);
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
