@@ -102,3 +102,6 @@ C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última G
 C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N1\proyectos\TP1_LUG_Mauro_DellOlio - 6 - BD\Menu_Inicio_IU\obj\Debug\Menu_Inicio_IU.pdb
 C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N1\proyectos\TP1_LUG_Mauro_DellOlio - 6 - BD\Menu_Inicio_IU\obj\Debug\Menu_Inicio_IU.frmNotaDeCredito.resources
 C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N1\proyectos\TP1_LUG_Mauro_DellOlio - 6 - BD\Menu_Inicio_IU\obj\Debug\Menu_Inicio_IU.frmAsignarNC.resources
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N1\proyectos\TP1_LUG_Mauro_DellOlio - 6 - BD\Menu_Inicio_IU\bin\Debug\Seguridad.dll
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N1\proyectos\TP1_LUG_Mauro_DellOlio - 6 - BD\Menu_Inicio_IU\bin\Debug\Seguridad.pdb
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N1\proyectos\TP1_LUG_Mauro_DellOlio - 6 - BD\Menu_Inicio_IU\obj\Debug\Menu_Inicio_IU.Login.resources

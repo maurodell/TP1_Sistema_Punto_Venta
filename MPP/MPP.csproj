@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MPPEmpleado.cs" />
+    <Compile Include="MPPLogin.cs" />
     <Compile Include="MPPNotaDeCredito.cs" />
     <Compile Include="MPPSucursal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -58,6 +59,10 @@
     <ProjectReference Include="..\DAL\DAL.csproj">
       <Project>{893cdc4d-963e-44df-8552-a868e06b3610}</Project>
       <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Seguridad\Seguridad.csproj">
+      <Project>{c0a67e50-d65c-4642-9d45-855ae184b5a3}</Project>
+      <Name>Seguridad</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

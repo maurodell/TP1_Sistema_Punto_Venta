@@ -46,6 +46,7 @@
     <Compile Include="BLLClsEmpleadoABM.cs" />
     <Compile Include="BLLClsNotaDeCredito.cs" />
     <Compile Include="BLLClsSucursal.cs" />
+    <Compile Include="BLLLogin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

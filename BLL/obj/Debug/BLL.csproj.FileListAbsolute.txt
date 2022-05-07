@@ -57,3 +57,5 @@ C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última G
 C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N1\proyectos\TP1_LUG_Mauro_DellOlio - 6 - BD\BLL\obj\Debug\BLL.csproj.CopyComplete
 C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N1\proyectos\TP1_LUG_Mauro_DellOlio - 6 - BD\BLL\obj\Debug\BLL.dll
 C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N1\proyectos\TP1_LUG_Mauro_DellOlio - 6 - BD\BLL\obj\Debug\BLL.pdb
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N1\proyectos\TP1_LUG_Mauro_DellOlio - 6 - BD\BLL\bin\Debug\Seguridad.dll
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N1\proyectos\TP1_LUG_Mauro_DellOlio - 6 - BD\BLL\bin\Debug\Seguridad.pdb

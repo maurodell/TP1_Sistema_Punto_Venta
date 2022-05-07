@@ -25,31 +25,21 @@ namespace MPP
 
         public bool Eliminar(BEClsEmpleado objEmp)
         {
-            if (Existe_NC_Asociada(objEmp) == false)
-            {
+
                 objEmp.Soft_Delete = false;
                 string consulta = "UPDATE Empleado SET Soft_Delete = " + Convert.ToByte(objEmp.Soft_Delete) + " WHERE idEmpleado = " + objEmp.Codigo + "";
                 oAcDatos = new Acceso();
                 return oAcDatos.Escribir(consulta);
-            }
-            else
-            {
-                return false;
-            }
+
         }
         public bool Alta(BEClsEmpleado objEmp)
         {
-            if (Existe_NC_Asociada(objEmp) == false)
-            {
-                objEmp.Soft_Delete = true;
-                string consulta = "UPDATE Empleado SET Soft_Delete = " + Convert.ToByte(objEmp.Soft_Delete) + " WHERE idEmpleado = " + objEmp.Codigo + "";
-                oAcDatos = new Acceso();
-                return oAcDatos.Escribir(consulta);
-            }
-            else
-            {
-                return false;
-            }
+
+            objEmp.Soft_Delete = true;
+            string consulta = "UPDATE Empleado SET Soft_Delete = " + Convert.ToByte(objEmp.Soft_Delete) + " WHERE idEmpleado = " + objEmp.Codigo + "";
+            oAcDatos = new Acceso();
+            return oAcDatos.Escribir(consulta);
+
         }
 
         public BEClsEmpleado Leer(BEClsEmpleado objEmp)

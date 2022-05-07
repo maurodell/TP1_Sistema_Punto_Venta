@@ -16,7 +16,6 @@ namespace Menu_Inicio_IU
         {
             InitializeComponent();
         }
-
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
         {
             System.Windows.Forms.Application.Exit();
@@ -41,6 +40,11 @@ namespace Menu_Inicio_IU
             frmAsignarNC AsignarNC = new frmAsignarNC();
             AsignarNC.MdiParent = this;
             AsignarNC.Show();
+        }
+
+        private void Menu_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

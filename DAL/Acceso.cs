@@ -31,6 +31,23 @@ namespace DAL
             conexion = null;
             GC.Collect();
         }
+        public string Get(string consulta)
+        {
+            SqlCommand cmd = new SqlCommand(consulta, conexion);
+
+            conexion.Open();
+
+            SqlDataReader reader = cmd.ExecuteReader();
+            string pass = "";
+            while (reader.Read())
+            {
+                pass = reader.GetString(0);
+            }
+            
+
+            conexion.Close();
+            return pass;
+        }
         public DataTable Leer(string consulta)
         {
             DataTable table = new DataTable();

@@ -1,0 +1,6 @@
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N1\proyectos\TP1_LUG_Mauro_DellOlio - 6 - BD\Seguridad\bin\Debug\Seguridad.dll
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N1\proyectos\TP1_LUG_Mauro_DellOlio - 6 - BD\Seguridad\bin\Debug\Seguridad.pdb
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N1\proyectos\TP1_LUG_Mauro_DellOlio - 6 - BD\Seguridad\obj\Debug\Seguridad.csproj.AssemblyReference.cache
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N1\proyectos\TP1_LUG_Mauro_DellOlio - 6 - BD\Seguridad\obj\Debug\Seguridad.csproj.CoreCompileInputs.cache
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N1\proyectos\TP1_LUG_Mauro_DellOlio - 6 - BD\Seguridad\obj\Debug\Seguridad.dll
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N1\proyectos\TP1_LUG_Mauro_DellOlio - 6 - BD\Seguridad\obj\Debug\Seguridad.pdb

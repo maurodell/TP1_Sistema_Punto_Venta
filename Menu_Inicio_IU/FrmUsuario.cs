@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using BLL;
 using BE;
-using MPP;
+using Seguridad;
 
 namespace Menu_Inicio_IU
 {
@@ -20,12 +20,14 @@ namespace Menu_Inicio_IU
         BLLClsEmpleadoABM empAMB;
         BLLClsSucursal oBLLSuc;
         frmSucursales listSuc;
+        ClsEncriptar passEncrip;
         public FrmUsuario()
         {
             InitializeComponent();
             empAMB = new BLLClsEmpleadoABM();
             listaEmp = BEClsUsuario.Instanciar();
             oBLLSuc = new BLLClsSucursal();
+            passEncrip = new ClsEncriptar();
             AcutalizarCmb();
         }
         public void AcutalizarCmb()
@@ -60,7 +62,7 @@ namespace Menu_Inicio_IU
                 pEmpleado.Apellido = txtApellido.Text;
                 pEmpleado.Email = txtEmail.Text;
                 pEmpleado.Sucursal = (BEClsSucursal)cmbSucursal.SelectedItem;
-                pEmpleado.Pass = txtPass.Text;
+                pEmpleado.Pass = passEncrip.Encriptar(txtPass.Text);
 
                 empAMB.Crear(pEmpleado);
 
