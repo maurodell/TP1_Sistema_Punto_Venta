@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MPP;
+using BE;
 
 namespace BLL
 {
@@ -11,16 +12,16 @@ namespace BLL
     {
         public BLLLogin()
         {
-            login = new MPPLogin();
+            MPPlogin = new MPPLogin();
         }
-        MPPLogin login;
+        MPPLogin MPPlogin;
         public bool ConsultarUsuario(string email, string pass)
         {
-            return login.ConsultarUsuario(email, pass);
+            return MPPlogin.ConsultarUsuario(email, pass);
         }
-        public string Get(string email, string pass)
+        public BEClsEmpleado Get(string email)
         {
-            return login.Get(email, pass);
+            return MPPlogin.Get(email);
         }
     }
 }

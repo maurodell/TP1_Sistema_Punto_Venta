@@ -18,12 +18,11 @@ namespace Menu_Inicio_IU
         {
             oBLLNC = new BLLClsNotaDeCredito();
             oBENC = new BEClsNotaDeCredito();
-            oBLLEmp = new BLLClsEmpleadoABM();
             InitializeComponent();
         }
         BLLClsNotaDeCredito oBLLNC;
         BEClsNotaDeCredito oBENC;
-        BLLClsEmpleadoABM oBLLEmp;
+        DTOUser dtoUser;
 
         void CargarGrilla()
         {
@@ -58,7 +57,9 @@ namespace Menu_Inicio_IU
 
         private void frmNotaDeCredito_Load(object sender, EventArgs e)
         {
+            dgvNC.MultiSelect = false;
             CargarGrilla();
+            ControlUser();
         }
 
         private void btnBaja_Click(object sender, EventArgs e)
@@ -69,13 +70,14 @@ namespace Menu_Inicio_IU
                 {
                     BEClsNotaDeCredito objNc = dgvNC.SelectedRows[0].DataBoundItem as BEClsNotaDeCredito;
                     DialogResult Respuesta;
-                    Respuesta = MessageBox.Show("¿Confirma la eleminación del Alumno?", "ALERTA", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                    Respuesta = MessageBox.Show("¿Confirma la eleminación del Nota de Crédito?", "ALERTA", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                     if (Respuesta == DialogResult.Yes)
                     {
-                        if (oBLLNC.Eliminar(objNc) == false)
-                        { MessageBox.Show("Para dar de baja al Alumno no debe tener Materias Asociadas"); }
+                        if (oBLLNC.Baja(objNc) == false)
+                        { MessageBox.Show("Para dar de baja una Nota de Crédito,\n" +
+                                            "está no debe estar asociada a un Empleado"); }
                         else
-                        {   
+                        {
                             CargarGrilla();
                             Limpiar();
                         }
@@ -90,10 +92,15 @@ namespace Menu_Inicio_IU
             catch (Exception ex)
             { MessageBox.Show(ex.Message); }
         }
-
-        private void btnCerrar_Click(object sender, EventArgs e)
+        public void ControlUser()
         {
-            this.Close();
+            dtoUser = new DTOUser();
+
+            if (dtoUser.VPU == "Cajero")
+            {
+                btnAlta.Enabled = false;
+                btnBaja.Enabled = false;
+            }
         }
     }
 }

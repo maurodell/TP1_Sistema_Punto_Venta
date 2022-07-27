@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using DAL;
 using System.Data;
 using Seguridad;
+using System.Collections;
+using BE;
 
 
 namespace MPP
@@ -14,9 +16,11 @@ namespace MPP
     {
         public MPPLogin()
         {
+            objDatos = new DatosBD();
             seg = new ClsEncriptar();
         }
-        Acceso oDatos;
+        DatosBD objDatos;
+        Hashtable Hdatos;
         ClsEncriptar seg;
         public bool ConsultarUsuario(string email, string pass)
         {
@@ -24,8 +28,8 @@ namespace MPP
             bool flag = false;
             //string password = seg.Encriptar(pass);
             string passBD = "";
-            string consulta = "SELECT Pass FROM Empleado WHERE Email = '" + email + "'";
-            Dt = oDatos.Leer(consulta);
+            string consulta = "Login_Email";
+            Dt = objDatos.Leer(consulta, null);
             if (Dt.Rows.Count > 0)
             {
                 foreach (DataRow fila in Dt.Rows)
@@ -40,11 +44,48 @@ namespace MPP
             //return oDatos.Escribir(consulta);
             return flag;
         }
-        public string Get(string email, string pass)
+        public BEClsEmpleado Get(string email)
         {
-            oDatos = new Acceso();
-            string consulta = "SELECT Pass FROM Empleado WHERE Email = '" + email + "'";
-            return oDatos.Get(consulta);
+            Hdatos = new Hashtable();
+            Hdatos.Add("@Email", email);
+            DataTable Table = objDatos.Leer("Seleccionar_Usuario", Hdatos);
+
+            if (Table.Rows.Count > 0)
+            {
+                foreach (DataRow fila in Table.Rows)
+                {
+                    if (fila["NumCaja"] is DBNull)
+                    {
+                        BEClsAdministrador objAdmin = new BEClsAdministrador();
+                        objAdmin.Codigo = Convert.ToInt32(fila["idEmpleado"]);
+                        objAdmin.Nombre = fila["Nombre"].ToString();
+                        objAdmin.Apellido = fila["Apellido"].ToString();
+                        objAdmin.DNI = Convert.ToInt32(fila["DNI"]);
+                        objAdmin.Puesto = fila["Puesto"].ToString();
+                        objAdmin.Email = fila["Email"].ToString();
+                        objAdmin.Pass = fila["Pass"].ToString();
+                        objAdmin.Soft_Delete = Convert.ToBoolean(fila["Soft_Delete"]);
+
+                        return objAdmin;
+                    }
+                    else
+                    {
+                        BEClsCajero objCajero = new BEClsCajero();
+                        objCajero.Codigo = Convert.ToInt32(fila["idEmpleado"]);
+                        objCajero.Nombre = fila["Nombre"].ToString();
+                        objCajero.Apellido = fila["Apellido"].ToString();
+                        objCajero.DNI = Convert.ToInt32(fila["DNI"]);
+                        objCajero.Puesto = fila["Puesto"].ToString();
+                        objCajero.Email = fila["Email"].ToString();
+                        objCajero.Pass = fila["Pass"].ToString();
+                        objCajero.NumCaja = Convert.ToInt32(fila["NumCaja"]);
+                        objCajero.Soft_Delete = Convert.ToBoolean(fila["Soft_Delete"]);
+
+                        return objCajero;
+                    }
+                }
+            }
+            return null;
         }
     }
 }

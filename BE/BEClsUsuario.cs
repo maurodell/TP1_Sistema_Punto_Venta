@@ -17,6 +17,7 @@ namespace BE
             }
             return instancia;
         }
+        //ver de eliminar esta lista
         private BEClsUsuario()
         {
             listaEmpleados = new List<BEClsEmpleado>();

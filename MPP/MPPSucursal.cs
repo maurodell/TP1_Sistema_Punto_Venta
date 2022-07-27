@@ -7,75 +7,118 @@ using BE;
 using DAL;
 using Abstraccion;
 using System.Data;
+using System.Data.SqlClient;
+using System.Collections;
 
 namespace MPP
 {
     public class MPPSucursal : Repositorio<BEClsSucursal>
     {
-        Acceso oAcDatos;
-        
-        public bool Crear(BEClsSucursal ObjetoBE)
+        public MPPSucursal()
         {
-            string consulta;
-            consulta = "INSERT INTO Sucursal ([Telefono], [Direccion]) values ('" + ObjetoBE.Telefono + "', '" + ObjetoBE.Direccion + "')";
-            oAcDatos = new Acceso();
-            return oAcDatos.Escribir(consulta);
+            objDatos = new DatosBD();
+        }
+        DatosBD objDatos;
+        Hashtable Hdatos;
+
+        public bool Crear(BEClsSucursal Objeto)
+        {
+            string consulta = "Alta_Sucursal";
+            Hdatos = new Hashtable();
+
+            //si es diferente de cero, es para modificar el empleado.
+            if (Objeto.Codigo != 0)
+            {
+                Hdatos.Add("@idSuc", Objeto.Codigo);
+                consulta = "Sucursal_Modificar";
+            }
+
+            Hdatos.Add("@Tel", Objeto.Telefono);
+            Hdatos.Add("@Dir", Objeto.Direccion);
+
+            return objDatos.Escribir(consulta, Hdatos);
         }
 
-        public bool Eliminar(BEClsSucursal ObjetoBE)
+        public bool Baja(BEClsSucursal Objeto)
         {
-            if (ExisteSucAsociada(ObjetoBE) == false)
+            if (ExisteSucAsociada(Objeto) == false)
             {
-                string consulta = "DELETE FROM Sucursal WHERE idSuc = '"+ ObjetoBE.Codigo +"'";
-                oAcDatos = new Acceso();
-                return oAcDatos.Escribir(consulta);
+                Hdatos = new Hashtable();
+                Hdatos.Add("@idSuc", Objeto.Codigo);
+
+                return objDatos.Escribir("Sucursal_Baja", Hdatos);
             }
             else
             {
                 return false;
             }
+
         }
 
-        public BEClsSucursal Leer(BEClsSucursal Objeto)
+        public List<BEClsSucursal> ListarBusquedaApellido(BEClsSucursal Objeto)
         {
             throw new NotImplementedException();
         }
 
-        public List<BEClsSucursal> ListarTodos()
+        public BEClsSucursal LeerObjeto(int Objeto)
         {
-            DataTable table;
-            oAcDatos = new Acceso();
-            table = oAcDatos.Leer("SELECT idSuc, Telefono, Direccion FROM Sucursal");
-            List<BEClsSucursal> listaSuc = new List<BEClsSucursal>();
-            if (table.Rows.Count > 0)
+            Hdatos = new Hashtable();
+            Hdatos.Add("@idSuc", Objeto);
+            DataTable Table = objDatos.Leer("Buscar_X_DNI", Hdatos);
+
+            if (Table.Rows.Count > 0)
             {
-                foreach (DataRow item in table.Rows)
+                foreach (DataRow fila in Table.Rows)
                 {
                     BEClsSucursal sucObj = new BEClsSucursal();
-                    sucObj.Codigo = Convert.ToInt32(item[0]);
-                    sucObj.Telefono = item[1].ToString();
-                    sucObj.Direccion = item[2].ToString();
-                    listaSuc.Add(sucObj);
+                    sucObj.Codigo = Convert.ToInt32(fila[0]);
+                    sucObj.Telefono = fila[1].ToString();
+                    sucObj.Direccion = fila[2].ToString();
+
+                    return sucObj;
                 }
+            }
+            return null;
+        }
+        public List<BEClsSucursal> ListarTodos()
+        {
+            List<BEClsSucursal> listaSuc = new List<BEClsSucursal>();
+
+            DataTable tabla = objDatos.Leer("Listar_Sucursal", null);
+
+            if (tabla.Rows.Count > 0)
+            {
+                foreach (DataRow Item in tabla.Rows)
+                {
+                    BEClsSucursal objSuc = new BEClsSucursal();
+                    objSuc.Codigo = Convert.ToInt32(Item["IdSuc"]);
+                    objSuc.Telefono = Item["Telefono"].ToString();
+                    objSuc.Direccion = Item["Direccion"].ToString();
+                    listaSuc.Add(objSuc);
+                }
+                return listaSuc;
             }
             else
             {
-                listaSuc = null;
+                return null;
             }
-            return listaSuc;
+        }
+        public bool ExisteSucAsociada(BEClsSucursal Objeto)
+        {
+            Hdatos = new Hashtable();
+            Hdatos.Add("@idSuc", Objeto.Codigo);
+
+            return objDatos.LeerScalar("ExisteSucAsociada", Hdatos);
         }
 
-        public bool Modificar(BEClsSucursal ObjetoBE)
+        public bool Baja(int Objeto)
         {
-            string consulta;
-            consulta = "UPDATE Sucursal SET Telefono = '" + ObjetoBE.Telefono + "', Direccion = '" + ObjetoBE.Direccion + "' WHERE idSuc = '" + ObjetoBE.Codigo + "'";
-            oAcDatos = new Acceso();
-            return oAcDatos.Escribir(consulta);
+            throw new NotImplementedException();
         }
-        public bool ExisteSucAsociada(BEClsSucursal ObjetoBE)
+
+        public bool Alta(int Objeto)
         {
-            oAcDatos = new Acceso();
-            return oAcDatos.LeerScalar("SELECT COUNT(idSuc) FROM Empleado WHERE idSuc = '" + ObjetoBE.Codigo + "'");
+            throw new NotImplementedException();
         }
     }
 }

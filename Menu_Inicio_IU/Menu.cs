@@ -46,5 +46,17 @@ namespace Menu_Inicio_IU
         {
 
         }
+
+        private void proveedoresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmProveedor Proveedor = new frmProveedor();
+            Proveedor.MdiParent = this;
+            Proveedor.Show();
+        }
+
+        private void Menu_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            System.Windows.Forms.Application.Exit();
+        }
     }
 }

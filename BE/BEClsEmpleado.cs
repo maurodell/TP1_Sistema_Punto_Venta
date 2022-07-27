@@ -6,12 +6,14 @@ using System.Threading.Tasks;
 
 namespace BE
 {
-    public class BEClsEmpleado : Entidad
+    public abstract class BEClsEmpleado : Entidad
     {
         #region "Propiedades"
         public string Nombre { get; set; }
         public string Apellido { get; set; }
+        public int DNI { get; set; }
         public string Puesto { get; set; }
+        //Agregación
         public BEClsSucursal Sucursal { get; set; }
         public string Email { get; set; }
         public string Pass { get; set; }
@@ -22,12 +24,6 @@ namespace BE
             get { return softDelete; }
             set { softDelete = value; }
         }
-        public List<BEClsNotaDeCredito> ListaNC;
         #endregion
-        public BEClsEmpleado() { ListaNC = new List<BEClsNotaDeCredito>();  }
-        public int AuthCod()
-        {
-            return 0;
-        }
     }
 }

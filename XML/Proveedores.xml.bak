@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<proveedores>
+  <proveedore id="01">
+    <nombre> Heroes Of Might Magic VI</nombre>
+    <domicilio>Arcade</domicilio>
+    <telefono>PC</telefono>
+    <rubro> Ubisoft </rubro>
+  </proveedore>
+</proveedores>

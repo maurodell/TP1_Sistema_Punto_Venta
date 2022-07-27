@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<proveedores>
+  <proveedore id="01">
+    <nombre>Parodi</nombre>
+    <domicilio>Dr. Genova 5412</domicilio>
+    <telefono>34125623</telefono>
+    <rubro>Alimentos</rubro>
+  </proveedore>
+</proveedores>

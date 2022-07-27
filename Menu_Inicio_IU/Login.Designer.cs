@@ -34,6 +34,8 @@ namespace Menu_Inicio_IU
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtPass = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.btnMostrarPass = new System.Windows.Forms.Button();
+            this.btnOcultar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnIngresar
@@ -64,9 +66,10 @@ namespace Menu_Inicio_IU
             // 
             // txtPass
             // 
-            this.txtPass.Location = new System.Drawing.Point(158, 243);
+            this.txtPass.Location = new System.Drawing.Point(162, 243);
             this.txtPass.Name = "txtPass";
-            this.txtPass.Size = new System.Drawing.Size(477, 38);
+            this.txtPass.PasswordChar = '*';
+            this.txtPass.Size = new System.Drawing.Size(438, 38);
             this.txtPass.TabIndex = 3;
             // 
             // label2
@@ -78,11 +81,33 @@ namespace Menu_Inicio_IU
             this.label2.TabIndex = 4;
             this.label2.Text = "Password";
             // 
+            // btnMostrarPass
+            // 
+            this.btnMostrarPass.Location = new System.Drawing.Point(627, 232);
+            this.btnMostrarPass.Name = "btnMostrarPass";
+            this.btnMostrarPass.Size = new System.Drawing.Size(65, 59);
+            this.btnMostrarPass.TabIndex = 5;
+            this.btnMostrarPass.Text = "M";
+            this.btnMostrarPass.UseVisualStyleBackColor = true;
+            this.btnMostrarPass.MouseClick += new System.Windows.Forms.MouseEventHandler(this.btnMostrarPass_MouseClick);
+            // 
+            // btnOcultar
+            // 
+            this.btnOcultar.Location = new System.Drawing.Point(709, 232);
+            this.btnOcultar.Name = "btnOcultar";
+            this.btnOcultar.Size = new System.Drawing.Size(65, 59);
+            this.btnOcultar.TabIndex = 6;
+            this.btnOcultar.Text = "O";
+            this.btnOcultar.UseVisualStyleBackColor = true;
+            this.btnOcultar.MouseClick += new System.Windows.Forms.MouseEventHandler(this.btnOcultar_MouseClick);
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnOcultar);
+            this.Controls.Add(this.btnMostrarPass);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtPass);
             this.Controls.Add(this.txtEmail);
@@ -103,5 +128,7 @@ namespace Menu_Inicio_IU
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.TextBox txtPass;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnMostrarPass;
+        private System.Windows.Forms.Button btnOcultar;
     }
 }

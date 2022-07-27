@@ -18,19 +18,19 @@ namespace BLL
             sucMPP = new MPPSucursal();
         }
 
-        public bool Crear(BEClsSucursal ObjetoBE)
+        public bool Baja(BEClsSucursal Objeto)
         {
-            return sucMPP.Crear(ObjetoBE);
+            return sucMPP.Baja(Objeto);
         }
 
-        public bool Eliminar(BEClsSucursal ObjetoBE)
+        public bool Crear(BEClsSucursal Objeto)
         {
-            return sucMPP.Eliminar(ObjetoBE);
+            return sucMPP.Crear(Objeto);
         }
 
-        public BEClsSucursal Leer(BEClsSucursal ObjetoBE)
+        public BEClsSucursal LeerObjeto(int Objeto)
         {
-            throw new NotImplementedException();
+            return sucMPP.LeerObjeto(Objeto);
         }
 
         public List<BEClsSucursal> ListarTodos()
@@ -38,9 +38,19 @@ namespace BLL
             return sucMPP.ListarTodos();
         }
 
-        public bool Modificar(BEClsSucursal ObjetoBE)
+        public List<BEClsSucursal> ListarBusquedaApellido(BEClsSucursal Objeto)
         {
-            return sucMPP.Modificar(ObjetoBE);
+            throw new NotImplementedException();
+        }
+
+        public bool Baja(int Objeto)
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool Alta(int Objeto)
+        {
+            throw new NotImplementedException();
         }
     }
 }

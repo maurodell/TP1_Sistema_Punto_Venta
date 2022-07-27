@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<proveedores>
+  <proveedor id="01">
+    <nombre>Parodi</nombre>
+    <domicilio>Dr. Genova 5412</domicilio>
+    <telefono>34125623</telefono>
+    <rubro>Alimentos</rubro>
+  </proveedor>
+  <proveedor id="2">
+    <nombre>Fiambre</nombre>
+    <domicilio>Pje. Gutierrez 452</domicilio>
+    <telefono>3412562362</telefono>
+    <rubro>Varios</rubro>
+  </proveedor>
+  <proveedor id="3">
+    <nombre>Romano SRL</nombre>
+    <domicilio>Boulevar Segui</domicilio>
+    <telefono>011452300</telefono>
+    <rubro>Limpieza</rubro>
+  </proveedor>
+  <proveedor id="4">
+    <nombre>Parodi</nombre>
+    <domicilio>Catarmarca 236</domicilio>
+    <telefono>352652233</telefono>
+    <rubro>Electricos</rubro>
+  </proveedor>
+</proveedores>

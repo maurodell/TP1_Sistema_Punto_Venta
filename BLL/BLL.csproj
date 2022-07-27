@@ -43,10 +43,12 @@
   <ItemGroup>
     <Compile Include="BLLClsAdministrador.cs" />
     <Compile Include="BLLClsCajero.cs" />
-    <Compile Include="BLLClsEmpleadoABM.cs" />
+    <Compile Include="BLLClsEmpleado.cs" />
     <Compile Include="BLLClsNotaDeCredito.cs" />
+    <Compile Include="BLLClsProveedor.cs" />
     <Compile Include="BLLClsSucursal.cs" />
     <Compile Include="BLLLogin.cs" />
+    <Compile Include="BLLUsuarios.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

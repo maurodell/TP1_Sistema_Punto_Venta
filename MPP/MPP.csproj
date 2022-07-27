@@ -41,10 +41,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MPPEmpleado.cs" />
+    <Compile Include="MPPAdministrador.cs" />
+    <Compile Include="MPPCajero.cs" />
     <Compile Include="MPPLogin.cs" />
     <Compile Include="MPPNotaDeCredito.cs" />
+    <Compile Include="MPPProveedor.cs" />
     <Compile Include="MPPSucursal.cs" />
+    <Compile Include="MPPUsuarios.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

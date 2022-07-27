@@ -41,6 +41,7 @@ namespace Menu_Inicio_IU
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.btnLimpiar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSuc)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -59,13 +60,12 @@ namespace Menu_Inicio_IU
             this.dgvSuc.Size = new System.Drawing.Size(1069, 428);
             this.dgvSuc.TabIndex = 0;
             this.dgvSuc.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSuc_CellClick);
-            this.dgvSuc.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSuc_CellContentClick);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(916, 661);
+            this.button1.Location = new System.Drawing.Point(956, 661);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(185, 55);
+            this.button1.Size = new System.Drawing.Size(145, 55);
             this.button1.TabIndex = 1;
             this.button1.Text = "Cerrar";
             this.button1.UseVisualStyleBackColor = true;
@@ -103,7 +103,7 @@ namespace Menu_Inicio_IU
             // 
             // btnModSuc
             // 
-            this.btnModSuc.Location = new System.Drawing.Point(496, 661);
+            this.btnModSuc.Location = new System.Drawing.Point(450, 661);
             this.btnModSuc.Name = "btnModSuc";
             this.btnModSuc.Size = new System.Drawing.Size(185, 55);
             this.btnModSuc.TabIndex = 8;
@@ -113,7 +113,7 @@ namespace Menu_Inicio_IU
             // 
             // btnBajaSuc
             // 
-            this.btnBajaSuc.Location = new System.Drawing.Point(264, 661);
+            this.btnBajaSuc.Location = new System.Drawing.Point(241, 661);
             this.btnBajaSuc.Name = "btnBajaSuc";
             this.btnBajaSuc.Size = new System.Drawing.Size(185, 55);
             this.btnBajaSuc.TabIndex = 9;
@@ -133,6 +133,7 @@ namespace Menu_Inicio_IU
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnLimpiar);
             this.groupBox1.Controls.Add(this.dgvSuc);
             this.groupBox1.Controls.Add(this.btnAltaSuc);
             this.groupBox1.Controls.Add(this.label4);
@@ -169,6 +170,16 @@ namespace Menu_Inicio_IU
             this.label5.TabIndex = 6;
             this.label5.Text = "Telefono";
             // 
+            // btnLimpiar
+            // 
+            this.btnLimpiar.Location = new System.Drawing.Point(659, 661);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(185, 55);
+            this.btnLimpiar.TabIndex = 11;
+            this.btnLimpiar.Text = "Limpiar";
+            this.btnLimpiar.UseVisualStyleBackColor = true;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
+            // 
             // frmSucursales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
@@ -199,5 +210,6 @@ namespace Menu_Inicio_IU
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button btnLimpiar;
     }
 }

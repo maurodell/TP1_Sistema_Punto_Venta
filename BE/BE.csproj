@@ -45,8 +45,10 @@
     <Compile Include="BEClsCajero.cs" />
     <Compile Include="BEClsEmpleado.cs" />
     <Compile Include="BEClsNotaDeCredito.cs" />
+    <Compile Include="BEClsProveedor.cs" />
     <Compile Include="BEClsUsuario.cs" />
     <Compile Include="BEClsSucursal.cs" />
+    <Compile Include="DTOUser.cs" />
     <Compile Include="Entidad.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

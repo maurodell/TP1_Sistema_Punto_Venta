@@ -8,17 +8,13 @@ namespace BE
 {
     public class BEClsAdministrador : BEClsEmpleado
     {
-        //Random rnd = new Random();
-        //public int codAuth { get; set; }
-
+        #region"Propiedad"
+        //Composición
+        public List<BEClsNotaDeCredito> ListaNC = new List<BEClsNotaDeCredito>();
         public BEClsAdministrador()
         {
-            //codAuth = rnd.Next(0,1500);
             Puesto = "Administrativo";
         }
-        //public int AuthCod()
-        //{
-        //    return codAuth;
-        //}
+        #endregion
     }
 }

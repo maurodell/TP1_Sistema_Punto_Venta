@@ -16,16 +16,18 @@ namespace Menu_Inicio_IU
     {
         public frmAsignarNC()
         {
-            oBLLEmp = new BLLClsEmpleadoABM();
+            listaEmp = new BLLUsuarios();
             oBLLNC = new BLLClsNotaDeCredito();
             oBENC = new BEClsNotaDeCredito();
-            oBEEmp = new BEClsEmpleado();
             InitializeComponent();
         }
-        BLLClsEmpleadoABM oBLLEmp;
+        BLLUsuarios listaEmp;
         BLLClsNotaDeCredito oBLLNC;
         BEClsNotaDeCredito oBENC;
         BEClsEmpleado oBEEmp;
+        BLLClsAdministrador BLLAdmin;
+        BLLClsCajero BLLCajero;
+        DTOUser dtoUser;
         private void btnCerrar_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -33,9 +35,16 @@ namespace Menu_Inicio_IU
         void CargarGrilla()
         {
             this.dgvResp.DataSource = null;
-            this.dgvResp.DataSource = oBLLEmp.ListarTodos();
+            this.dgvResp.DataSource = listaEmp.ListarTodos();
             this.dgvResp.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.DisplayedCells;
             this.dgvResp.AlternatingRowsDefaultCellStyle.BackColor = Color.Beige;
+        }
+        void CargarGrillaNotaCredito()
+        {
+            this.dgvAsigados.DataSource = null;
+            this.dgvAsigados.DataSource = oBLLNC.ListarNC_Empleado(oBEEmp);
+            this.dgvAsigados.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.DisplayedCells;
+            this.dgvAsigados.AlternatingRowsDefaultCellStyle.BackColor = Color.Beige;
         }
         public void AcutalizarCmb()
         {
@@ -53,27 +62,27 @@ namespace Menu_Inicio_IU
 
                 oBEEmp = (BEClsEmpleado)dgvResp.CurrentRow.DataBoundItem;
 
-                if (oBEEmp.ListaNC.Count > 0)
+                if (oBEEmp != null && oBENC != null)
                 {
-                    foreach (BEClsNotaDeCredito notaCred in oBEEmp.ListaNC)
+                    //otra propuesta para ver si la nota de credito ya fue asignada en la MPP cuando hace AsociarEmpleadoNC
+                    if (oBEEmp is BEClsCajero)
                     {
-                        if (notaCred.Codigo.Equals(oBENC.Codigo))
+                        BLLCajero = new BLLClsCajero();
+                        if (BLLCajero.AsociarEmpleadoNC(oBEEmp, oBENC) == false)
                         {
-                            MessageBox.Show("La Nota de Crédito ya fue asignada");
-                            break;
+                            MessageBox.Show("Nota de Crédito ya Asignada!");
                         }
-                        else
+                    }
+                    else
+                    {
+                        BLLAdmin = new BLLClsAdministrador();
+                        if(BLLAdmin.AsociarEmpleadoNC(oBEEmp, oBENC) == false)
                         {
-                            oBLLEmp.AsignarNC_Empleado(oBEEmp, oBENC);
-                            break;
+                            MessageBox.Show("Nota de Crédito ya Asignada!");
                         }
                     }
                 }
-                else
-                {
-                    oBLLEmp.AsignarNC_Empleado(oBEEmp, oBENC);
-                }
-                CargarGrilla();
+                CargarGrillaNotaCredito();
             }
             catch (Exception ex)
             {
@@ -86,20 +95,46 @@ namespace Menu_Inicio_IU
         {
             CargarGrilla();
             AcutalizarCmb();
+            ControlUser();
         }
 
         private void dgvResp_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             oBEEmp = (BEClsEmpleado)dgvResp.CurrentRow.DataBoundItem;
-            oBLLEmp.ListarNC_Empleado(oBEEmp);
             dgvAsigados.DataSource = null;
-            dgvAsigados.DataSource = oBEEmp.ListaNC;
+            dgvAsigados.DataSource = oBLLNC.ListarNC_Empleado(oBEEmp);
             this.dgvAsigados.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.DisplayedCells;
         }
 
         private void btnQuitar_Click(object sender, EventArgs e)
         {
+            try
+            {
+                oBENC = (BEClsNotaDeCredito)dgvAsigados.CurrentRow.DataBoundItem;
 
+                oBEEmp = (BEClsEmpleado)dgvResp.CurrentRow.DataBoundItem;
+
+                if (oBEEmp != null)
+                {
+                    BLLCajero = new BLLClsCajero();
+                    BLLCajero.QuitarEmpleadoNC(oBENC);
+                }
+                CargarGrillaNotaCredito();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+        public void ControlUser()
+        {
+            dtoUser = new DTOUser();
+
+            if (dtoUser.VPU == "Cajero")
+            {
+                btnAsignar.Enabled = false;
+                btnQuitar.Enabled = false;
+            }
         }
     }
 }

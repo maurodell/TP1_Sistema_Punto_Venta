@@ -16,29 +16,47 @@ namespace BLL
             oMPPNotaCred = new MPPNotaDeCredito();
         }
         MPPNotaDeCredito oMPPNotaCred;
-        public bool Crear(BEClsNotaDeCredito objNC)
+
+        public bool Crear(BEClsNotaDeCredito Objeto)
         {
-            return oMPPNotaCred.Crear(objNC);
+            return oMPPNotaCred.Crear(Objeto);
         }
 
-        public bool Eliminar(BEClsNotaDeCredito objNC)
+        public bool Baja(BEClsNotaDeCredito Objeto)
         {
-            return oMPPNotaCred.Eliminar(objNC);
+            return oMPPNotaCred.Baja(Objeto);
         }
 
-        public BEClsNotaDeCredito Leer(BEClsNotaDeCredito objNC)
+        public List<BEClsNotaDeCredito> ListarBusquedaApellido(BEClsNotaDeCredito Objeto)
         {
-            return oMPPNotaCred.Leer(objNC);
+            throw new NotImplementedException();
         }
 
+        public BEClsNotaDeCredito LeerObjeto(int Objeto)
+        {
+            return oMPPNotaCred.LeerObjeto(Objeto);
+        }
         public List<BEClsNotaDeCredito> ListarTodos()
         {
             return oMPPNotaCred.ListarTodos();
         }
-
-        public bool Modificar(BEClsNotaDeCredito objNC)
+        public List<BEClsNotaDeCredito> ListarNC_Empleado(BEClsEmpleado Objeto)
         {
-            return oMPPNotaCred.Modificar(objNC);
+            return oMPPNotaCred.ListarNC_Empleado(Objeto);
+        }
+        public bool Existe_Empleado_Asociada(BEClsNotaDeCredito objNC)
+        {
+            return oMPPNotaCred.Existe_Empleado_Asociada(objNC);
+        }
+
+        public bool Baja(int Objeto)
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool Alta(int Objeto)
+        {
+            throw new NotImplementedException();
         }
     }
 }

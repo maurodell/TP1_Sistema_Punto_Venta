@@ -8,9 +8,12 @@ namespace BE
 {
     public class BEClsCajero : BEClsEmpleado
     {
+        #region"Propiedad"
+        public int NumCaja { get; set; }
         public BEClsCajero()
         {
             Puesto = "Cajero";
         }
+        #endregion
     }
 }

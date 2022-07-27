@@ -9,9 +9,9 @@ namespace Abstraccion
     public interface Repositorio<T> where T : IEntidad
     {
         bool Crear(T Objeto);
-        T Leer(T Objeto);
-        bool Modificar(T Objeto);
-        bool Eliminar(T Objeto);
-        List<T> ListarTodos();
+        bool Baja(int Objeto);
+        bool Alta(int Objeto);
+        List<T> ListarBusquedaApellido(T Objeto);
+        T LeerObjeto(int Objeto);
     }
 }

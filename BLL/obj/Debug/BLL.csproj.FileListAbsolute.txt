@@ -59,3 +59,122 @@ C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última G
 C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N1\proyectos\TP1_LUG_Mauro_DellOlio - 6 - BD\BLL\obj\Debug\BLL.pdb
 C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N1\proyectos\TP1_LUG_Mauro_DellOlio - 6 - BD\BLL\bin\Debug\Seguridad.dll
 C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N1\proyectos\TP1_LUG_Mauro_DellOlio - 6 - BD\BLL\bin\Debug\Seguridad.pdb
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N1\Entrega\TP1_LUG_DellOlio_Mauro\BLL\bin\Debug\BLL.dll
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N1\Entrega\TP1_LUG_DellOlio_Mauro\BLL\bin\Debug\BLL.pdb
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N1\Entrega\TP1_LUG_DellOlio_Mauro\BLL\bin\Debug\Abstraccion.dll
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N1\Entrega\TP1_LUG_DellOlio_Mauro\BLL\bin\Debug\BE.dll
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N1\Entrega\TP1_LUG_DellOlio_Mauro\BLL\bin\Debug\MPP.dll
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N1\Entrega\TP1_LUG_DellOlio_Mauro\BLL\bin\Debug\DAL.dll
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N1\Entrega\TP1_LUG_DellOlio_Mauro\BLL\bin\Debug\Seguridad.dll
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N1\Entrega\TP1_LUG_DellOlio_Mauro\BLL\bin\Debug\Abstraccion.pdb
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N1\Entrega\TP1_LUG_DellOlio_Mauro\BLL\bin\Debug\BE.pdb
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N1\Entrega\TP1_LUG_DellOlio_Mauro\BLL\bin\Debug\MPP.pdb
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N1\Entrega\TP1_LUG_DellOlio_Mauro\BLL\bin\Debug\DAL.pdb
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N1\Entrega\TP1_LUG_DellOlio_Mauro\BLL\bin\Debug\Seguridad.pdb
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N1\Entrega\TP1_LUG_DellOlio_Mauro\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N1\Entrega\TP1_LUG_DellOlio_Mauro\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N1\Entrega\TP1_LUG_DellOlio_Mauro\BLL\obj\Debug\BLL.csproj.CopyComplete
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N1\Entrega\TP1_LUG_DellOlio_Mauro\BLL\obj\Debug\BLL.dll
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N1\Entrega\TP1_LUG_DellOlio_Mauro\BLL\obj\Debug\BLL.pdb
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 3\BLL\bin\Debug\BLL.dll
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 3\BLL\bin\Debug\BLL.pdb
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 3\BLL\bin\Debug\Abstraccion.dll
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 3\BLL\bin\Debug\BE.dll
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 3\BLL\bin\Debug\MPP.dll
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 3\BLL\bin\Debug\DAL.dll
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 3\BLL\bin\Debug\Seguridad.dll
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 3\BLL\bin\Debug\Abstraccion.pdb
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 3\BLL\bin\Debug\BE.pdb
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 3\BLL\bin\Debug\MPP.pdb
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 3\BLL\bin\Debug\DAL.pdb
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 3\BLL\bin\Debug\Seguridad.pdb
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 3\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 3\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 3\BLL\obj\Debug\BLL.csproj.CopyComplete
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 3\BLL\obj\Debug\BLL.dll
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 3\BLL\obj\Debug\BLL.pdb
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 4\BLL\bin\Debug\BLL.dll
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 4\BLL\bin\Debug\BLL.pdb
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 4\BLL\bin\Debug\Abstraccion.dll
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 4\BLL\bin\Debug\BE.dll
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 4\BLL\bin\Debug\MPP.dll
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 4\BLL\bin\Debug\DAL.dll
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 4\BLL\bin\Debug\Seguridad.dll
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 4\BLL\bin\Debug\Abstraccion.pdb
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 4\BLL\bin\Debug\BE.pdb
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 4\BLL\bin\Debug\MPP.pdb
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 4\BLL\bin\Debug\DAL.pdb
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 4\BLL\bin\Debug\Seguridad.pdb
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 4\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 4\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 4\BLL\obj\Debug\BLL.csproj.CopyComplete
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 4\BLL\obj\Debug\BLL.dll
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 4\BLL\obj\Debug\BLL.pdb
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 5\BLL\bin\Debug\BLL.dll
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 5\BLL\bin\Debug\BLL.pdb
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 5\BLL\bin\Debug\Abstraccion.dll
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 5\BLL\bin\Debug\BE.dll
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 5\BLL\bin\Debug\MPP.dll
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 5\BLL\bin\Debug\DAL.dll
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 5\BLL\bin\Debug\Seguridad.dll
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 5\BLL\bin\Debug\Abstraccion.pdb
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 5\BLL\bin\Debug\BE.pdb
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 5\BLL\bin\Debug\MPP.pdb
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 5\BLL\bin\Debug\DAL.pdb
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 5\BLL\bin\Debug\Seguridad.pdb
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 5\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 5\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 5\BLL\obj\Debug\BLL.csproj.CopyComplete
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 5\BLL\obj\Debug\BLL.dll
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 5\BLL\obj\Debug\BLL.pdb
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 7\BLL\bin\Debug\BLL.dll
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 7\BLL\bin\Debug\BLL.pdb
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 7\BLL\bin\Debug\Abstraccion.dll
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 7\BLL\bin\Debug\BE.dll
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 7\BLL\bin\Debug\MPP.dll
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 7\BLL\bin\Debug\DAL.dll
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 7\BLL\bin\Debug\Seguridad.dll
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 7\BLL\bin\Debug\Abstraccion.pdb
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 7\BLL\bin\Debug\BE.pdb
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 7\BLL\bin\Debug\MPP.pdb
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 7\BLL\bin\Debug\DAL.pdb
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 7\BLL\bin\Debug\Seguridad.pdb
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 7\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 7\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 7\BLL\obj\Debug\BLL.csproj.CopyComplete
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 7\BLL\obj\Debug\BLL.dll
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 7\BLL\obj\Debug\BLL.pdb
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 8\BLL\bin\Debug\BLL.dll
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 8\BLL\bin\Debug\BLL.pdb
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 8\BLL\bin\Debug\Abstraccion.dll
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 8\BLL\bin\Debug\BE.dll
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 8\BLL\bin\Debug\MPP.dll
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 8\BLL\bin\Debug\DAL.dll
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 8\BLL\bin\Debug\Seguridad.dll
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 8\BLL\bin\Debug\Abstraccion.pdb
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 8\BLL\bin\Debug\BE.pdb
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 8\BLL\bin\Debug\MPP.pdb
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 8\BLL\bin\Debug\DAL.pdb
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 8\BLL\bin\Debug\Seguridad.pdb
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 8\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 8\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 8\BLL\obj\Debug\BLL.csproj.CopyComplete
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 8\BLL\obj\Debug\BLL.dll
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 8\BLL\obj\Debug\BLL.pdb
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 9 - copia\BLL\bin\Debug\BLL.dll
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 9 - copia\BLL\bin\Debug\BLL.pdb
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 9 - copia\BLL\bin\Debug\Abstraccion.dll
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 9 - copia\BLL\bin\Debug\BE.dll
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 9 - copia\BLL\bin\Debug\MPP.dll
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 9 - copia\BLL\bin\Debug\DAL.dll
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 9 - copia\BLL\bin\Debug\Seguridad.dll
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 9 - copia\BLL\bin\Debug\Abstraccion.pdb
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 9 - copia\BLL\bin\Debug\BE.pdb
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 9 - copia\BLL\bin\Debug\MPP.pdb
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 9 - copia\BLL\bin\Debug\DAL.pdb
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 9 - copia\BLL\bin\Debug\Seguridad.pdb
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 9 - copia\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 9 - copia\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 9 - copia\BLL\obj\Debug\BLL.csproj.CopyComplete
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 9 - copia\BLL\obj\Debug\BLL.dll
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 9 - copia\BLL\obj\Debug\BLL.pdb

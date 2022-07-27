@@ -4,29 +4,52 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data;
-using BE;
+using System.Data.SqlClient;
+using System.Collections;
 using DAL;
 using Abstraccion;
+using BE;
 
 namespace MPP
 {
     public class MPPNotaDeCredito : Repositorio<BEClsNotaDeCredito>
     {
-        Acceso oAcDatos;
-        public bool Crear(BEClsNotaDeCredito oBENC)
+        public MPPNotaDeCredito()
         {
-            string consulta = string.Format("INSERT INTO NotaDeCredito (Numero_Doc, Fecha, Monto) values (" + oBENC.Numero_doc + ",'" + (oBENC.Fecha).ToString("MM/dd/yyyy") + "'," + oBENC.Monto + ")");
-            oAcDatos = new Acceso();
-            return oAcDatos.Escribir(consulta);
+            objDatos = new DatosBD();
+        }
+        DatosBD objDatos;
+        Hashtable Hdatos;
+
+        public bool Crear(BEClsNotaDeCredito Objeto)
+        {
+            string consulta = "Alta_NC";
+            Hdatos = new Hashtable();
+
+            //si es diferente de cero, es para modificar el empleado.
+            if (Objeto.Codigo != 0)
+            {
+                Hdatos.Add("@idEmpleado", Objeto.Codigo);
+                consulta = "NC_Modificar";
+            }
+
+            Hdatos.Add("@Numero_doc", Objeto.Numero_doc);
+            Hdatos.Add("@Fecha", Objeto.Fecha);
+            Hdatos.Add("@Monto", Objeto.Monto);
+
+            return objDatos.Escribir(consulta, Hdatos);
         }
 
-        public bool Eliminar(BEClsNotaDeCredito objNC)
+        public bool Baja(BEClsNotaDeCredito Objeto)
         {
-            if (Existe_Empleado_Asociada(objNC) == false)
+            Hdatos = new Hashtable();
+            string Consulta = "NC_Baja";
+
+            Hdatos.Add("@idNotaCredito", Objeto.Codigo);
+
+            if (Existe_Empleado_Asociada(Objeto) == false)
             {
-                string consulta = "DELETE FROM NotaDeCredito WHERE idNC = '" + objNC.Codigo + "'";
-                oAcDatos = new Acceso();
-                return oAcDatos.Escribir(consulta);
+                return objDatos.Escribir(Consulta, Hdatos);
             }
             else
             {
@@ -34,44 +57,84 @@ namespace MPP
             }
         }
 
-        public BEClsNotaDeCredito Leer(BEClsNotaDeCredito oBENC)
+        public List<BEClsNotaDeCredito> ListarBusquedaApellido(BEClsNotaDeCredito Objeto)
         {
             throw new NotImplementedException();
         }
 
-        public List<BEClsNotaDeCredito> ListarTodos()
-        {
-            DataTable table;
-            oAcDatos = new Acceso();
-            table = oAcDatos.Leer("SELECT idNC, Numero_Doc, Fecha, Monto FROM NotaDeCredito");
-            List<BEClsNotaDeCredito> listaSuc = new List<BEClsNotaDeCredito>();
-            if (table.Rows.Count > 0)
-            {
-                foreach (DataRow item in table.Rows)
-                {
-                    BEClsNotaDeCredito ncObj = new BEClsNotaDeCredito();
-                    ncObj.Codigo = Convert.ToInt32(item[0]);
-                    ncObj.Numero_doc = Convert.ToInt32(item[1].ToString());
-                    ncObj.Fecha = Convert.ToDateTime(item[2].ToString());
-                    ncObj.Monto = Convert.ToDouble(item[3].ToString());
-                    listaSuc.Add(ncObj);
-                }
-            }
-            else
-            {
-                listaSuc = null;
-            }
-            return listaSuc;
-        }
-
-        public bool Modificar(BEClsNotaDeCredito oBENC)
+        public BEClsNotaDeCredito LeerObjeto(int Objeto)
         {
             throw new NotImplementedException();
         }
         public bool Existe_Empleado_Asociada(BEClsNotaDeCredito objNC)
-        {  
-            oAcDatos = new Acceso();
-            return oAcDatos.LeerScalar("SELECT COUNT(idNotaCredito) from NC_Empleado where idNotaCredito =" + objNC.Codigo + "");
+        {
+            Hashtable Hdatos2 = new Hashtable();
+
+            if (objNC.Codigo != 0)
+            {
+                Hdatos2.Add("@idNC", objNC.Codigo);
+                return objDatos.LeerScalar("NotaCredito_Existe", Hdatos2);
+            }
+            else
+            {
+                return false;
+            }
+        }
+        public List<BEClsNotaDeCredito> ListarTodos()
+        {
+            List<BEClsNotaDeCredito> listaNC = new List<BEClsNotaDeCredito>();
+
+            string Consulta = "Listar_Todas_NC";
+
+            DataTable Table = objDatos.Leer(Consulta, null);
+
+            if (Table.Rows.Count > 0)
+            {
+                foreach (DataRow fila in Table.Rows)
+                {
+                    BEClsNotaDeCredito objNC = new BEClsNotaDeCredito();
+                    objNC.Codigo = Convert.ToInt32(fila[0]);
+                    objNC.Numero_doc = Convert.ToInt32(fila[1].ToString());
+                    objNC.Fecha = Convert.ToDateTime(fila[2].ToString());
+                    objNC.Monto = Convert.ToDouble(fila[3].ToString());
+
+                    listaNC.Add(objNC);
+                }
+            }
+            return listaNC;
+        }
+        public List<BEClsNotaDeCredito> ListarNC_Empleado(BEClsEmpleado Objeto)
+        {
+            List<BEClsNotaDeCredito> listaNC = new List<BEClsNotaDeCredito>();
+            Hashtable Hdatos3 = new Hashtable();
+            string Consulta = "Listar_NC_X_Empleado";
+            Hdatos3.Add("@idEmpleado", Objeto.Codigo);
+            DataTable Table = objDatos.Leer(Consulta, Hdatos3);
+
+            if (Table.Rows.Count > 0)
+            {
+                foreach (DataRow fila in Table.Rows)
+                {
+                    BEClsNotaDeCredito objNC = new BEClsNotaDeCredito();
+                    objNC.Codigo = Convert.ToInt32(fila[0]);
+                    objNC.Numero_doc = Convert.ToInt32(fila[1].ToString());
+                    objNC.Fecha = Convert.ToDateTime(fila[2].ToString());
+                    objNC.Monto = Convert.ToDouble(fila[3].ToString());
+
+                    listaNC.Add(objNC);
+                }
+            }
+            return listaNC;
+        }
+
+        public bool Baja(int Objeto)
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool Alta(int Objeto)
+        {
+            throw new NotImplementedException();
         }
     }
 }

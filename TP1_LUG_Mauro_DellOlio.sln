@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31702.278
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Menu_Inicio_IU", "Menu_Inicio_IU\Menu_Inicio_IU.csproj", "{916576F4-801D-410E-8A17-666303BAD779}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Menu_Inicio_UI", "Menu_Inicio_IU\Menu_Inicio_UI.csproj", "{916576F4-801D-410E-8A17-666303BAD779}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "BLL\BLL.csproj", "{D969C5BC-920B-4BA2-ABF0-8F9DE79F6FD3}"
 EndProject

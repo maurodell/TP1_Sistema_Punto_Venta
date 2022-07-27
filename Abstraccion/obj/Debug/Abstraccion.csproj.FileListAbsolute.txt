@@ -4,3 +4,24 @@ C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última G
 C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N1\proyectos\TP1_LUG_Mauro_DellOlio - 4 - BD\Abstraccion\obj\Debug\Abstraccion.csproj.CoreCompileInputs.cache
 C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N1\proyectos\TP1_LUG_Mauro_DellOlio - 4 - BD\Abstraccion\obj\Debug\Abstraccion.dll
 C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N1\proyectos\TP1_LUG_Mauro_DellOlio - 4 - BD\Abstraccion\obj\Debug\Abstraccion.pdb
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 3\Abstraccion\bin\Debug\Abstraccion.dll
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 3\Abstraccion\bin\Debug\Abstraccion.pdb
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 3\Abstraccion\obj\Debug\Abstraccion.csproj.CoreCompileInputs.cache
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 3\Abstraccion\obj\Debug\Abstraccion.dll
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 3\Abstraccion\obj\Debug\Abstraccion.pdb
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 4\Abstraccion\bin\Debug\Abstraccion.dll
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 4\Abstraccion\bin\Debug\Abstraccion.pdb
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 4\Abstraccion\obj\Debug\Abstraccion.csproj.CoreCompileInputs.cache
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 4\Abstraccion\obj\Debug\Abstraccion.dll
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 4\Abstraccion\obj\Debug\Abstraccion.pdb
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 5\Abstraccion\bin\Debug\Abstraccion.dll
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 5\Abstraccion\bin\Debug\Abstraccion.pdb
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 5\Abstraccion\obj\Debug\Abstraccion.csproj.CoreCompileInputs.cache
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 5\Abstraccion\obj\Debug\Abstraccion.dll
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 5\Abstraccion\obj\Debug\Abstraccion.pdb
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 9 - copia\Abstraccion\bin\Debug\Abstraccion.dll
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 9 - copia\Abstraccion\bin\Debug\Abstraccion.pdb
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 9 - copia\Abstraccion\obj\Debug\Abstraccion.csproj.AssemblyReference.cache
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 9 - copia\Abstraccion\obj\Debug\Abstraccion.csproj.CoreCompileInputs.cache
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 9 - copia\Abstraccion\obj\Debug\Abstraccion.dll
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 9 - copia\Abstraccion\obj\Debug\Abstraccion.pdb

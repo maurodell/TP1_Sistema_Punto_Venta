@@ -16,5 +16,15 @@ namespace BE
             return Telefono + " " + Direccion;
         }
         #endregion
+        #region "Construtores sobrecargados"
+        public BEClsSucursal()
+        {
+
+        }
+        public BEClsSucursal(string pDirección)
+        {
+            this.Direccion = pDirección;
+        }
+        #endregion
     }
 }

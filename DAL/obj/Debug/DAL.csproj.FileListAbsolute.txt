@@ -10,3 +10,27 @@ C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última G
 C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N1\proyectos\TP1_LUG_Mauro_DellOlio - 6 - BD\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
 C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N1\proyectos\TP1_LUG_Mauro_DellOlio - 6 - BD\DAL\obj\Debug\DAL.dll
 C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N1\proyectos\TP1_LUG_Mauro_DellOlio - 6 - BD\DAL\obj\Debug\DAL.pdb
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 3\DAL\bin\Debug\DAL.dll
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 3\DAL\bin\Debug\DAL.pdb
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 3\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 3\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 3\DAL\obj\Debug\DAL.dll
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 3\DAL\obj\Debug\DAL.pdb
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 4\DAL\bin\Debug\DAL.dll
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 4\DAL\bin\Debug\DAL.pdb
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 4\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 4\DAL\obj\Debug\DAL.dll
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 4\DAL\obj\Debug\DAL.pdb
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 4\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 5\DAL\bin\Debug\DAL.dll
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 5\DAL\bin\Debug\DAL.pdb
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 5\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 5\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 5\DAL\obj\Debug\DAL.dll
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 5\DAL\obj\Debug\DAL.pdb
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 9 - copia\DAL\bin\Debug\DAL.dll
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 9 - copia\DAL\bin\Debug\DAL.pdb
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 9 - copia\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 9 - copia\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 9 - copia\DAL\obj\Debug\DAL.dll
+C:\Users\mdo\Desktop\Analista Programador\2 año\2 cuatri\Lenguajes de última Generación\TP N2\proyecto TP 1\TP1_LUG_DellOlio_Mauro 9 - copia\DAL\obj\Debug\DAL.pdb
